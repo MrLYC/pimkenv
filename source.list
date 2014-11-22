@@ -1,0 +1,2 @@
+#deb http://mirrordirector.raspbian.org/raspbian/ wheezy main contrib non-free rpi
+deb http://mirrors.ustc.edu.cn/raspbian/raspbian/ wheezy main contrib non-free rpi
