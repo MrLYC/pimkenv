@@ -23,4 +23,4 @@ vnc-auto-start:
 	update-rc.d tightvncserver defaults
 
 vnc-start: tightvncserver
-	tvncserver -geometry 760x400 :1
+	tightvncserver -geometry 760x400 :1
