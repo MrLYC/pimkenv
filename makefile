@@ -22,5 +22,5 @@ vnc-auto-start:
 	chmod 755 /etc/init.d/tightvncserver
 	update-rc.d tightvncserver defaults
 
-vnc-start: tightvncserver
-	tightvncserver -geometry 760x400 :1
+xrdp:
+	$(aptget) install xrdp
