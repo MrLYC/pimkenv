@@ -24,3 +24,18 @@ vnc-auto-start:
 
 xrdp:
 	$(aptget) install xrdp
+
+seafile:
+	$(aptget) install install python-simplejson python-imaging sqlite3
+	mkdir -p /opt/seafile/installed/
+	wget https://bitbucket.org/haiwen/seafile/downloads/seafile-server_3.1.6_pi.tar.gz -O /opt/seafile/
+	cd /opt/seafile/ && \
+	tar -xzf /opt/seafile/seafile-server_* && \
+	mv /opt/seafile/seafile-server_* /opt/seafile/installed/
+	cd /opt/seafile/seafile-server-* && \
+	./setup-seafile.sh
+
+seafile-run:
+	cd /opt/seafile/seafile-server_* && \
+	./seafile.sh start && \
+	./seahub.sh start 1234
