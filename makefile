@@ -39,3 +39,7 @@ seafile-run:
 	cd /opt/seafile/seafile-server_* && \
 	./seafile.sh start && \
 	./seahub.sh start 1234
+
+profile:
+	cp ./lyc_profile.sh /etc/profile.d/
+	chmod 777 /etc/profile.d/lyc_profile.sh
