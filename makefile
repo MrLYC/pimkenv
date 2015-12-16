@@ -43,3 +43,6 @@ seafile-run:
 profile:
 	cp ./lyc_profile.sh /etc/profile.d/
 	chmod 777 /etc/profile.d/lyc_profile.sh
+
+lang-zh:
+	$(aptget) install ttf-wqy-zenhei scim-pinyin
